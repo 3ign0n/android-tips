@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:gravity="center">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/buttonPrev" android:text="@string/btn_prev_text"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_next_text" android:id="@+id/buttonNext"></Button>
+</LinearLayout>
+<ViewFlipper android:layout_width="match_parent" android:id="@+id/viewFlipperAnimation" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="match_parent" android:background="#ff0000">
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:id="@+id/linearLayout3" android:background="#00ff00"></LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout4" android:layout_height="match_parent" android:background="#0000ff"></LinearLayout>
+</ViewFlipper>
+</LinearLayout>
